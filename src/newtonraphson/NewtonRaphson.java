@@ -21,6 +21,8 @@ public class NewtonRaphson {
 
         while (Math.abs(fxI) >= eMax) {
             System.out.println("\n\nIteracion #" + contador);
+            System.out.print("\nXi= ");
+            System.out.printf("%06f", xInicial);
             System.out.print("\nF(Xi)= ");
             System.out.printf("%06f", fxI);
             System.out.print("\nF'(X)= ");
@@ -37,10 +39,20 @@ public class NewtonRaphson {
             System.out.printf("%06f", fPrimaX);
 
         }
+
+        System.out.println("\n\nIteracion #" + contador);
+        System.out.print("\nXi= ");
+        System.out.printf("%06f", xInicial);
+        System.out.print("\nF(Xi)= ");
+        System.out.printf("%06f", fxI);
+        System.out.print("\nF'(X)= ");
+        System.out.printf("%06f", fPrimaX);
+
         System.out.print("\n\nRaiz: ");
         System.out.printf("%06f", xInicial);
         System.out.print("\nF(X" + contador + ")= ");
-        System.out.printf("%06f", fPrimaX);
+        System.out.printf("%06f", fxI);
+        System.out.println();
 
     }
 
